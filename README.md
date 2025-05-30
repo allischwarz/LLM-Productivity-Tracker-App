@@ -83,6 +83,21 @@ This key is required for generating summaries via the /weekly-summary endpoint.
 After generating a summary, your chroma_db/ folder will contain your vector index. You can now use the Search feature in the app to semantically query past summaries.
 
 
+# Docker Setup (Optional Advanced Feature)
+
+To run the full app using Docker:
+
+1. Create a `.env` file in the root of the project with your Anthropic API key: ANTHROPIC_API_KEY = your-api-key-here
+
+2. Run both backend and frontend:
+___________________________________________________________________
+```bash
+docker-compose up --build
+___________________________________________________________________
+
+React will run at: http://localhost:3000
+FastAPI will run at: http://localhost:8000
+
 
 
 
