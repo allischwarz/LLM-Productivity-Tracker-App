@@ -95,6 +95,15 @@ docker-compose up --build
 React will run at: http://localhost:3000
 FastAPI will run at: http://localhost:8000
 
+# Populate Vector Store with Sample Summaries
+To test the productivity summary search feature with example data:
+
+1. Activate your backend environment
+2. Navigate to the backend folder
+3. Run:
+
+'''bash
+python populate_sample_data.py
 
 
 
