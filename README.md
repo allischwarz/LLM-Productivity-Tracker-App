@@ -99,7 +99,6 @@ To run the full app using Docker:
 
 2. Run both backend and frontend:
 ```
-```bash
 docker-compose up --build
 ```
 
@@ -113,7 +112,6 @@ To test the productivity summary search feature with example data:
 2. Navigate to the backend folder
 3. Run:
 ```
-```bash
 python populate_sample_data.py
 ```
 
