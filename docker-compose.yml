@@ -1,0 +1,28 @@
+# docker-compose.yml
+
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: .
+    working_dir: /app/src
+    command: npm run dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - backend
