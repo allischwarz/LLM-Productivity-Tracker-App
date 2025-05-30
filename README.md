@@ -24,7 +24,9 @@ ANTHROPIC_API_KEY=[your_api_key_here]
 In the main project root, run:
 
 cd backend #navigate to backend directory
+
 pip install -r requirements.txt #install python dependencies
+
 uvicorn main:app --reload --port 8000 #start FastAPI server
 
 
