@@ -13,13 +13,13 @@ Create a .env file in the backend directory with the following content:
 ANTHROPIC_API_KEY=[your_api_key_here]
 
 In the main project root, run:
-___________________________________________________________________
+--
 cd backend #navigate to backend directory
 
 pip install -r requirements.txt #install python dependencies
 
 uvicorn main:app --reload --port 8000 #start FastAPI server
-___________________________________________________________________
+__
 
 The backend will start on http://localhost:8000
 
