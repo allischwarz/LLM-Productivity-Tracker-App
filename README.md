@@ -1,3 +1,12 @@
+# Productivity Tracker with AI-Powered Weekly Summaries Overview
+This is a full-stack productivity tracker that helps users log tasks, visualize time spent, and generate weekly summaries using generative AI. Built with a React frontend and a FastAPI backend, the app allows users to:
+- Record daily tasks with time spent and focus level.
+- View productivity trends over time using interactive charts.
+- Automatically generate weekly summaries using a GenAI API.
+- Store and semantically search past summaries with a local vector store (Chroma + SentenceTransformers).
+
+Designed to be lightweight and modular, this project demonstrates how AI-enhanced feedback and vector-based memory can support personal productivity.
+
 # Getting Started
 To get this project running locally, first start the FastAPI backend, then launch the React frontend in the frontend/ folder.
 
@@ -106,6 +115,8 @@ To test the productivity summary search feature with example data:
 python populate_sample_data.py
 
 
+# Technical Decisios
+See [technical-decisions.md](./technical-decisions.md) for architecture rationale and library/model justifications.
 
 
 
