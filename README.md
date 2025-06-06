@@ -118,5 +118,7 @@ python populate_sample_data.py
 # Technical Decisions
 See [technical-decisions.md](./technical-decisions.md) for architecture rationale and library/model justifications.
 
+# Productivity Tracker Demo Video
 
+https://youtu.be/71oHtEtbRGk
 
